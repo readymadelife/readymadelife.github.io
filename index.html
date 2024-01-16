@@ -1,7 +1,8 @@
 ---
-title: Kyeongyeon's Portfolio
+title: resume
 layout: default
 myName: 임경연
+birth: 1995년 12월 11일
 phoneNumber: +82)10-4420-2086
 mail: momey11@naver.com
 github: readymadelife
@@ -14,19 +15,23 @@ github: readymadelife
         <ul class="content-wrapper">
             <li class="content-item">
                 <span class="title">name</span>
-                <span>임경연</span>
+                <span>{{  page.myName  }}</span>
+            </li>
+            <li class="content-item">
+                <span class="title">birth</span>
+                <span>{{  page.birth  }}</span>
             </li>
             <li class="content-item">
                 <span class="title">phone</span>
-                <span>+82)10-4420-2086</span>
+                <span>{{  page.phoneNumber  }}</span>
             </li>
             <li class="content-item">
                 <span class="title">email</span>
-                <span>momey11@naver.com</span>
+                <span>{{  page.mail  }}</span>
             </li>
             <li class="content-item">
                 <span class="title">github</span>
-                <span>readymadelife</span>
+                <span>{{  page.github  }}</span>
             </li>
         </ul>
     </div>
