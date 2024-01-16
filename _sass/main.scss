@@ -1,0 +1,71 @@
+
+$slate-50: #f8fafc;
+$slate-100: #f1f4f9;
+$slate-200: #e2e8f0;
+$slate-300: #cbd5e1;
+$slate-400: #94a3b8;
+$slate-500: #64748b;
+$slate-600: #475569;
+$slate-700: #334155;
+$slate-800: #1e293b;
+$slate-900: #0f172a;
+$slate-950: #020617;
+$header-height: 3rem;
+$wide-letter-space: 0.1rem;
+$grid-col-number: 8;
+
+
+body {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+header {
+    height: 2.5rem;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+
+    .logo {
+        letter-spacing: $wide-letter-space;
+        font-size: larger;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+@import 'font';
+@import 'portfolio'
