@@ -31,8 +31,15 @@ h1 {
     margin-bottom: 1rem;
 }
 
-a:link {
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
+.new-page:link {
     text-decoration: none;
     color:#000;
     display:flex;
@@ -52,7 +59,7 @@ a:link {
     }
 }
 
-a:visited {
+.new-page:visited {
     text-decoration: none;
     color:#000;
 }
@@ -96,10 +103,6 @@ header {
             background: center / contain no-repeat url('/assets/img/icon/close.svg');
         }
 
-        .menu-items {
-            opacity: 1;
-            
-        }
     }
 
 
@@ -142,6 +145,9 @@ header {
 
             &:hover {
                 color: $point-color;
+                a {
+                    text-decoration: none;
+                }
             }
         }
 
@@ -173,4 +179,4 @@ footer {
 
 
 @import 'font';
-@import 'portfolio'
+@import 'resume'

@@ -60,6 +60,23 @@
 }
 
 
+.post-list-container {
+    .post-list-wrapper {
+        &:not(:last-child) {
+            padding-bottom: 24px;
+        }
+        .title {
+
+        }
+        .date {
+            font-size: small;
+            color: #000;
+        }
+    }
+
+}
+
+
 @media all and (max-width: 767px) {
     .content-item {
         display:flex;
