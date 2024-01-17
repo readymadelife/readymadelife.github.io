@@ -15,7 +15,7 @@
         gap: 1rem;
 
         &:not(:last-child) {
-            padding-bottom: 16px;
+            padding-bottom: 24px;
         }
         .title {
             min-width: 6rem;
@@ -24,7 +24,7 @@
         .content {
             .detail {
                 padding-left: 8px;
-                padding-top: 4px;
+                padding-top: 8px;
                 display:flex;
                 gap: 4px;
                 &::before {
@@ -37,18 +37,21 @@
                     span {
                         display:flex;
                         gap:4px;
+                        padding-top: 4px;
 
                         &::before {
                             content: "-";
                             display:block;
 
                         }
+
+                        
                     }
                     
                 }
                 li {
                     &:not(:last-child) {
-                        padding-bottom: 8px;
+                        padding-bottom: 16px;
                     }
                 }
             }  
