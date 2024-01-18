@@ -26,7 +26,6 @@ $wide-letter-space: 0.1rem;
 $grid-col-number: 8;
 $point-color: #ffa500;
 
-
 body {
     margin: 0;
 }
@@ -190,4 +189,5 @@ footer {
 
 
 @import 'font';
-@import 'resume'
+@import 'resume';
+@import 'post';

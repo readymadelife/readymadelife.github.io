@@ -30,15 +30,15 @@
         <div class="container">
             
             <!-- 컨텐츠 -->
-            <section class="content-container">
-                <section class="section-container">
-                    <h1>{{  page.subTitle  }}</h1>
-                    <div>{{  page.date | date: "%B %d, %Y" }}</div>
-                    <div>
+            <div class="content-container">
+                <div class="section-container blog-container">
+                    <div class="blog-title">{{  page.subTitle  }}</div>
+                    <div class="blog-date">{{  page.date | date: "%B %d, %Y" }}</div>
+                    <div class="blog-content">
                         {{content}}
                     </div>
-                </section>
-            </section>
+                </div>
+            </div>
             <!-- 푸터 -->
             <footer>
                 <span>ⓒ 2024. readymadelife All rights reserved.</span>
