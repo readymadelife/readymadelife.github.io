@@ -51,10 +51,12 @@ a {
 
 .new-page:link {
     text-decoration: none;
-    color:#000;
+    color:inherit;
     display:flex;
     align-items: center;
     gap: 2px;
+    width: -moz-fit-content;
+    width: fit-content;
 
     &::after {
         content: '';
@@ -71,7 +73,34 @@ a {
 
 .new-page:visited {
     text-decoration: none;
-    color:#000;
+    color:inherit;
+}
+
+.internal-link:link {
+    text-decoration: none;
+    color:inherit;
+    display:flex;
+    align-items: center;
+    gap: 2px;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    &::after {
+        content: '';
+        background: center / contain no-repeat url('/assets/img/icon/link.svg');
+        width: 1.2rem;
+        height: 1.2rem;
+        display: inline-block;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.internal-link:visited {
+    text-decoration: none;
+    color:inherit;
 }
 
 button {

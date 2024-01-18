@@ -13,6 +13,32 @@
     }
 
     .blog-content {
-        margin-top: 3rem;
+        margin-top: 1rem;
+
+        h1, h2, h3, h4 {
+            margin: 0 0 0.5rem 0;
+            padding: 0
+        }
+
+        p {
+            margin: 0 0 1.5rem 0;
+            padding: 0;
+            line-height: 180%;
+        }
+
+        h1 {
+            font-size:medium;
+            font-weight: 500;
+            color: $point-color;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+     
     }
 }
