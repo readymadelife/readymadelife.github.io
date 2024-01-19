@@ -15,14 +15,12 @@
     .blog-content {
         margin-top: 1rem;
 
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, p {
             margin: 0 0 0.5rem 0;
             padding: 0
         }
 
         p {
-            margin: 0 0 1.5rem 0;
-            padding: 0;
             line-height: 180%;
         }
 
@@ -30,6 +28,15 @@
             font-size:medium;
             font-weight: 500;
             color: $point-color;
+            &:not(:first-child) {
+                margin-top: 1.2rem;
+            }
+        }
+
+        h2 {
+            font-size: medium;
+            font-weight: 500;
+            color: #008000;
         }
 
         .blog-img {
@@ -37,6 +44,23 @@
             height: auto;
             display: block;
             margin: 0 auto;
+        }
+
+        ol { 
+            margin: 0;
+            padding: 0;
+            margin: 0 0 0.5rem 0;
+
+            li {
+                display: flex;
+                gap: 4px;
+                line-height: 180%;
+                &:before {
+                    content: "- ";
+                    display: block;
+
+                }
+            }
         }
 
      
