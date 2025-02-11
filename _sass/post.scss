@@ -62,7 +62,13 @@
                 }
             }
         }
-
-     
     }
+}
+.highlight pre {
+    background: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Fira Code', monospace;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
 }
