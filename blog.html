@@ -5,6 +5,13 @@ layout: default
 
 <section class="section-container">
     <h1>blog</h1>
-Sorry, not open yet.
-
+    {% assign blogs = site.posts | where_exp: "post", "post.categories contains 'blog'" %}
+    <ul class="post-list-container">
+        {% for post in blogs %}
+        <li class="post-list-wrapper">
+            <a href="{{ post.url }}" class="internal-link">{{ post.subTitle }}</a>
+            <span class="date">{{ post.duration }}</span>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
